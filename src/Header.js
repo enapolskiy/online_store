@@ -2,14 +2,15 @@ import * as React from 'react';
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import {NavLink} from "react-router-dom";
 
 
  const Header = () => {
     return (
         <div className='header'>
-
-            <img className='header__logo' src='https://www.graphicsprings.com/filestorage/stencils/08f2f908329d65d89188efd42d2c081c.png?width=500&height=500' />
-
+<NavLink to='/'>
+            <img className='header__logo' src='http://pngimg.com/uploads/super_bowl/super_bowl_PNG14.png' />
+</NavLink>
             <div className='header__search'>
                 <input className='header__searchInput' type='text'/>
                 <SearchIcon className='header__searchIcon'/>
@@ -29,10 +30,11 @@ import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
                     <span className='header__optionLineOne'>Your</span>
                     <span className='header__optionLineTwo'> Prime</span>
                 </div>
+                <NavLink to='/checkout'>
                 <div className='header__optionBasket'>
                     <ShoppingBasketIcon/>
                     <span className='header__basketCount'>0</span>
-                </div>
+                </div></NavLink>
             </div>
         </div>
 

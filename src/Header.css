@@ -9,8 +9,8 @@
 }
 
 .header__logo {
-    width: 75px;
-    margin-top: -6px;
+    width: 120px;
+    margin-top: 5px;
     margin-left: 25px;
     object-fit: contain;
     max-resolution: 0 20px;
@@ -23,7 +23,7 @@
 }
 
 .header__search {
-    margin-left: 40px;
+    margin-left: 38px;
     display: flex;
     flex: 1;
     align-items: center;
