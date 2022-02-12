@@ -1,14 +1,15 @@
-import './Home.css'
-import Product from "./Product";
+import style from './Home.module.css'
+import Product from "../Product/Product";
 
 const Home = () => {
     return (
-        <div className='home'>
-            <div className='home_container'>
-                <img className='home__title' src='https://kcentr.ru/upload/1369093235.png'/>
+        <div className={style.home}>
+            <div className={style.home_container}>
+                {/*<img className={style.home__title} src='https://kcentr.ru/upload/1369093235.png'/>*/}
+                <img className={style.home__title} src='https://s.alicdn.com/@img/imgextra/i4/O1CN01yDTr7T1ifZE4Po81r_!!6000000004440-0-tps-968-230.jpg'/>
             </div>
 
-            <div className='home__row home__row1'>
+            <div className={`${style.home__row} ${style.home__row1}`}>
                 <Product title='Fire-Boltt BN1400 Bluetooth Wireless In Ear Earphones with Mic (Black)'
                          price={1699}
                          img='https://images-eu.ssl-images-amazon.com/images/I/31ekJkeWv8S._AC_SX184_.jpg'
@@ -30,7 +31,7 @@ const Home = () => {
 
 
             </div>
-            <div className='home__row'>
+            <div className={style.home__row}>
                 <Product
                     title='Samsung 24 inch (60.4 cm) IPS, 3 Side Bezel Less Flat LED Monitor (Dark Blue Gray) 75 Hz - LS24R356FHWXXL'
                     price={17999}
@@ -47,7 +48,7 @@ const Home = () => {
 
 
             </div>
-            <div className='home__row'>
+            <div className={style.home__row}>
                 <Product title='Redmi 10 Prime (Astral White 4GB RAM 64GB ROM |Helio G88 with extendable RAM Upto 2GB |FHD+ 90Hz Adaptive Sync Display)'
                          price={12599}
                          img='https://m.media-amazon.com/images/I/71q297sVv3L._SL1500_.jpg'
