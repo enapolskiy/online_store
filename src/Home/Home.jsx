@@ -11,19 +11,19 @@ const Home = () => {
 
             <div className={`${style.home__row} ${style.home__row1}`}>
                 <Product title='Fire-Boltt BN1400 Bluetooth Wireless In Ear Earphones with Mic (Black)'
-                         price={1699}
+                         price={1699.99}
                          img='https://images-eu.ssl-images-amazon.com/images/I/31ekJkeWv8S._AC_SX184_.jpg'
                          rating={3}
 
                 />
                 <Product title='Boult Audio AirBass Livebuds Bluetooth Truly Wireless in Ear Earbuds with Mic (Red)'
-                         price={1299}
+                         price={1299.99}
                          img='https://images-eu.ssl-images-amazon.com/images/I/31gTXiH8jeL._AC_SX184_.jpg'
                          rating={4}
 
                 />
                 <Product title='Infinity (JBL) Glide 500, 20 Hrs Playtime with Quick Charge, Wireless On Ear Headphone with Mic, Deep Bass, Dual Equalizer, Bluetooth 5.0 with Voice Assistant Support (Black)'
-                         price={1599}
+                         price={1599.99}
                          img='https://images-eu.ssl-images-amazon.com/images/I/415CgBOdgNL._AC_SX184_.jpg'
                          rating={4}
 
@@ -34,7 +34,7 @@ const Home = () => {
             <div className={style.home__row}>
                 <Product
                     title='Samsung 24 inch (60.4 cm) IPS, 3 Side Bezel Less Flat LED Monitor (Dark Blue Gray) 75 Hz - LS24R356FHWXXL'
-                    price={17999}
+                    price={17999.99}
                     img='https://images-eu.ssl-images-amazon.com/images/I/41ui6ON5ULL._AC_SX184_.jpg'
                     rating={5}
                 />
