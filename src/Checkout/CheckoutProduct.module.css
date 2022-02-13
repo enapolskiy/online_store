@@ -1,0 +1,33 @@
+.checkoutProduct {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.title {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.img {
+    object-fit: contain;
+    width: 180px;
+    height: 180px;
+
+}
+
+.info {
+    padding-left: 30px;
+}
+
+.button {
+    border: 2px solid;
+    margin-top: 10px;
+    background-color: mediumorchid;
+
+}
+
+.rating {
+    color: gold;
+}
