@@ -22,3 +22,7 @@
 .home__row1 {
     margin-top: 0px;
 }
+
+.header__optionLineOne:active {
+    color: red;
+}

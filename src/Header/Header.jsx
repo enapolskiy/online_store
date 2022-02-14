@@ -20,10 +20,11 @@ import {useStateValue} from "../StateProvider";
 
             </div>
             <div className={style.header__nav}>
+                <NavLink to='/login' >
                 <div className={style.header__option}>
                   <span className={style.header__optionLineOne}>Hello Guest</span>
                     <span className={style.header__optionLineTwo}>Sign in</span>
-                </div>
+                </div> </NavLink>
                 <div className={style.header__option}>
                     <span className={style.header__optionLineOne}>Returns</span>
                     <span className={style.header__optionLineTwo}>& Orders</span>

@@ -3,6 +3,7 @@ import Header from "./Header/Header";
 import Home from "./Home/Home";
 import {Routes, Route} from 'react-router-dom'
 import CheckOut from "./Checkout/CheckOut";
+import Login from "./Login/login";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <Header />
         <Routes>
             <Route path='/' element={<Home />} />
-            {/*<Route path='login' element={<LoginPage />} />*/}
+            <Route path='login' element={<Login />} />
             <Route path='/checkout' element={<CheckOut />} />
         </Routes>
 
