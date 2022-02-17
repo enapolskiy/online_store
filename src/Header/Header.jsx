@@ -1,13 +1,18 @@
-import * as React from 'react';
+import React from 'react';
 import style from './Header.module.css';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import {NavLink} from "react-router-dom";
 import {useStateValue} from "../StateProvider";
-
+import {auth} from "../firebase";
 
  const Header = () => {
-     const [{basket}, dispatch] = useStateValue()
+     const [{basket, user}, dispatch] = useStateValue();
+     const handleAuthentication = () => {
+         if (user) {
+             auth.signOut()
+         }
+     }
     return (
         <div className={style.header}>
 <NavLink to='/'>
@@ -20,10 +25,10 @@ import {useStateValue} from "../StateProvider";
 
             </div>
             <div className={style.header__nav}>
-                <NavLink to='/login' >
-                <div className={style.header__option}>
+                <NavLink to={!user && '/login'} >
+                <div className={style.header__option} onClick={handleAuthentication}>
                   <span className={style.header__optionLineOne}>Hello Guest</span>
-                    <span className={style.header__optionLineTwo}>Sign in</span>
+                    <span className={style.header__optionLineTwo}>{user ? 'Sign Out' : 'Sign In'}</span>
                 </div> </NavLink>
                 <div className={style.header__option}>
                     <span className={style.header__optionLineOne}>Returns</span>
