@@ -16,7 +16,7 @@ const Login = () => {
         auth
             .signInWithEmailAndPassword(email, password)
             .then(auth => {
-             navigate.push('')
+             navigate('')
             }
         )
     }
@@ -28,7 +28,7 @@ const Login = () => {
     auth
         .createUserWithEmailAndPassword(email, password)
         .then((auth) => {
-            if(auth) {navigate.push('')}
+            if(auth) {navigate('')}
         })
         // .catch(error => alert(error.message))
 

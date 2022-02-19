@@ -27,7 +27,7 @@ import {auth} from "../firebase";
             <div className={style.header__nav}>
                 <NavLink to={!user && '/login'} >
                 <div className={style.header__option} onClick={handleAuthentication}>
-                  <span className={style.header__optionLineOne}>Hello Guest</span>
+                  <span className={style.header__optionLineOne}>Hello {!user ? 'Guest' : user.email}</span>
                     <span className={style.header__optionLineTwo}>{user ? 'Sign Out' : 'Sign In'}</span>
                 </div> </NavLink>
                 <div className={style.header__option}>
