@@ -6,7 +6,7 @@ import {auth} from "../firebase";
 const Login = () => {
 
 
-    const history = useNavigate();
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('')
 
@@ -16,7 +16,7 @@ const Login = () => {
         auth
             .signInWithEmailAndPassword(email, password)
             .then(auth => {
-             history.push('/')
+             navigate.push('')
             }
         )
     }
@@ -28,9 +28,9 @@ const Login = () => {
     auth
         .createUserWithEmailAndPassword(email, password)
         .then((auth) => {
-            if(auth) {history.push('/')}
+            if(auth) {navigate.push('')}
         })
-        .catch(error => alert(error.message))
+        // .catch(error => alert(error.message))
 
     return (
         <div className={style.loginPage}>
