@@ -41,9 +41,9 @@ const Login = () => {
                 <h1>Sign in</h1>
                 <form>
                     <h5>E-mail</h5>
-                    <input type='text' value={email} onChange={e => setEmail(e.target.value)}/>
+                    <input type='text' value={email} onChange={event => setEmail(event.target.value)}/>
                     <h5>Password</h5>
-                    <input type='password' value={password} onChange={e => setPassword(e.target.value)}/>
+                    <input type='password' value={password} onChange={event => setPassword(event.target.value)}/>
                     <button onClick={signIn} type='submit'>Sign in</button>
                 </form>
                 <p>By continuing, you agree to Super Bowl's Conditions of Use and Privacy Notice.</p>
