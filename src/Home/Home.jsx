@@ -32,20 +32,21 @@ const Home = () => {
 
             </div>
             <div className={style.home__row}>
-                <Product
-                    title='Samsung 24 inch (60.4 cm) IPS, 3 Side Bezel Less Flat LED Monitor (Dark Blue Gray) 75 Hz - LS24R356FHWXXL'
-                    price={17999.99}
-                    img='https://images-eu.ssl-images-amazon.com/images/I/41ui6ON5ULL._AC_SX184_.jpg'
-                    rating={5}
-                />
-                <Product
-                    title='LG 81.28 cm (32 inch) 4K-UHD (3840 x 2160) VESA Display HDR 600 Monitor, DCI-P3 95%, Radeon FreeSync, Inbuilt Speaker (5W x 2), Height/Tilt Adjustable Stand, Display Port - 32UL750 (White)'
-                    price={14799}
-                    img='https://images-eu.ssl-images-amazon.com/images/I/41FqZ6yJNuL._AC_SX184_.jpg'
-                    rating={5}
-                />
 
+                    <Product
+                             title='Samsung 24 inch (60.4 cm) IPS, 3 Side Bezel Less Flat LED Monitor (Dark Blue Gray) 75 Hz - LS24R356FHWXXL'
+                             price={17999.99}
+                             img='https://images-eu.ssl-images-amazon.com/images/I/41ui6ON5ULL._AC_SX184_.jpg'
+                             rating={5}
+                    />
 
+                
+                    <Product
+                        title='LG 81.28 cm (32 inch) 4K-UHD (3840 x 2160) VESA Display HDR 600 Monitor, DCI-P3 95%, Radeon FreeSync, Inbuilt Speaker (5W x 2), Height/Tilt Adjustable Stand, Display Port - 32UL750 (White)'
+                        price={14799}
+                        img='https://images-eu.ssl-images-amazon.com/images/I/41FqZ6yJNuL._AC_SX184_.jpg'
+                        rating={5}
+                    />
 
             </div>
             <div className={style.home__row}>

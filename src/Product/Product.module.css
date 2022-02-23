@@ -29,9 +29,20 @@
     color: gold;
 }
 
-.product button {
-    background:mediumorchid ;
+.addButton {
+    background:burlywood ;
     border: 1px solid;
     margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.addButton:hover {
+    background: grey;
+}
+
+.addButton:active {
+    border: 3px solid;
+
 
 }

@@ -31,7 +31,7 @@ const Product = ({id,title, img, price, rating}) => {
                         <StarIcon/>)}
                 </div>
                 <img className={style.product__img} src={img}/>
-                <button onClick={addToBasket}>Add to Basket</button>
+                <button className={style.addButton} onClick={addToBasket}>Add to Basket</button>
             </div>
 
         </div>
